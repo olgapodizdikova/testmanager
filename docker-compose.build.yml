@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: testmanager
+    ports:
+      - "8080:8080"
+    env_file: .env
+
+  db:
+    image: postgres:10.14
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+    env_file: .env

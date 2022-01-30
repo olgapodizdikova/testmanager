@@ -1,0 +1,18 @@
+.env
+target/
+
+### UI ###
+ui/node_modules
+ui/.pnp
+.pnp.js
+ui/build
+ui/*.iml
+ui/package-lock.json
+
+### IntelliJ IDEA ###
+.idea
+.jpb
+.mvn
+*.iws
+*.iml
+*.ipr
